@@ -28,6 +28,8 @@ DarcyPressure::DarcyPressure(const InputParameters & parameters)
   _permeability(getParam<Real>("permeability")),
   _viscosity(getParam<Real>("viscosity"))
 {
+  if (_viscosity == 0)
+  paramError("viscosity", "The viscosity must be a non-zero real number.");
 
 }
 
