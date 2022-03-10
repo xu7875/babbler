@@ -1,0 +1,7 @@
+[Tests]
+  [test]
+    type = Exodiff
+    input = packed_column_test.i
+    exodiff = packed_column_test_out.e
+  []
+[]
