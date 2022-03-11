@@ -1,0 +1,7 @@
+[Tests]
+  [test]
+    type = 'Exodiff'
+    input = 'darcy_velocity_test.i'
+    exodiff = 'darcy_velocity_test_out.e'
+  []
+[]
